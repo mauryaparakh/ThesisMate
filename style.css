@@ -1,0 +1,72 @@
+/* General Page Style */
+body {
+    background-color: #1E1E1E;
+}
+
+/* Customize the title */
+h1 {
+    color: #85a8cd;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* Chat container to hold the chat messages */
+.chat-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: calc(100vh - 150px); /* Adjust based on the height of the title and padding */
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* General chat message style */
+.stMarkdown {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%; /* Optional: Set a max-width for better readability */
+    word-wrap: break-word; /* Ensure long words or URLs break to the next line */
+    color: white; /* Default text color */
+    display: inline-block; /* Ensure the message width only expands as much as needed */
+}
+
+/* Customize user messages */
+.userMessage {
+    position:relative; /* Aligns user messages to the right */
+    margin-right: 10px;
+    background-color: #147efb; /* Use a blue color for user messages */
+    color: white; /* Ensure text color contrasts with the background */
+    text-align: left; /* Ensure text inside the bubble aligns to the right */
+}
+
+/* Customize bot messages */
+.botMessage {
+    align-self: left; /* Aligns bot messages to the left */
+    background-color: #53d769; /* Use a green color for bot messages */
+    color: white; /* Ensure text color contrasts with the background */
+    text-align: left; /* Ensure text inside the bubble aligns to the left */
+}
+
+/* Customize the input box */
+.stTextInput {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 0 10px;
+    z-index: 1000; /* Ensure the input box is above other content */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.stTextInput input {
+    background-color: #333;
+    color: white;
+    border: 2px solid #ffffff; /* Set a thicker, uniform border */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Make the input box take the full width of the parent */
+    box-sizing: border-box; /* Ensure padding and border are included in the width calculation */
+    outline: none; /* Remove default outline to avoid conflicts */
+}
