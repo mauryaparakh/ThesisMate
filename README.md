@@ -1,0 +1,2 @@
+# ThesisMate
+Bachelor Thesis Project
