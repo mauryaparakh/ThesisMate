@@ -28,7 +28,7 @@ os.environ["GOOGLE_API_KEY"]=os.getenv("GOOGLE_API_KEY")
 st.title("ThesisMate")
 
 # Initialize the LLM and prompt template
-llm = ChatGroq(groq_api_key=groq_api_key, model_name="gemma-7b-it")
+llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama-3.1-70b-versatile")
 
 prompt = ChatPromptTemplate.from_template("""
 Answer the questions based on the provided context.
